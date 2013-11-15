@@ -1,0 +1,39 @@
+{
+    "plan": {
+        "member_id": "123",
+        "plan_id": "1",
+        "plan_name": "a",
+        "plan_star": 1,
+        "plan_comment": "aaa",
+        "plan_value": 123,
+        "categories": [
+            {
+                "category_id": "1"
+            },
+            {
+                "category_id": "2"
+            },
+            {
+                "category_id": "3"
+            }
+        ],
+        "destinations": [
+            {
+                "dest_id": "123",
+                "dest_name": "123",
+                "dest_value": 123,
+                "dest_accesses": [
+                    {
+                        "dest_access_id": "123",
+                        "depart": "123",
+                        "arrival": "123",
+                        "depart_date": "2012/10/16 05:05:05",
+                        "arrival_date": "2012/10/16 05:05:05",
+                        "access_id": "1",
+                        "dest_access_value": 1234
+                    }
+                ]
+            }
+        ]
+    }
+}

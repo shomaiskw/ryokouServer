@@ -1,0 +1,5 @@
+/member/get
+
+{
+	"member_id":"1"
+}

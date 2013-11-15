@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>POSTサンプル</title>
+</head>
+<body>
+
+<p>会員</p>
+  
+  
+  
+<h2>登録</h2>
+<form method="post" action="/members">
+ <p>
+ 会員ID：<input type="text" name="member_id" /><br />
+ 会員ニック：<input type="text" name="member_nic" /><br />
+ 会員生年月日：<input type="text" name="member_birthday" /><br />
+ 会員性別：<input type="text" name="member_sex" /><br />
+ 会員住所：<input type="text" name="member_address" /><br />
+ 会員職業：<input type="text" name="job_id" /><br />
+ 会員メール：<input type="text" name="member_mail" /><br />
+ 会員パスワード：<input type="text" name="member_passwd" /><br />
+ 
+ <input type="submit" value="送信" />
+ </p>
+</form>
+  
+  
+  
+<h2>更新</h2>
+<form method="put" action="/members">
+ <p>
+ 会員ID：<input type="text" name="member_id" /><br />
+ 会員ニック：<input type="text" name="member_nic" /><br />
+ 会員生年月日：<input type="text" name="member_birthday" /><br />
+ 会員性別：<input type="text" name="member_sex" /><br />
+ 会員住所：<input type="text" name="member_address" /><br />
+ 会員職業：<input type="text" name="job_id" /><br />
+ 会員メール：<input type="text" name="member_mail" /><br />
+ 会員パスワード：<input type="text" name="member_passwd" /><br />
+ 
+ <input type="submit" value="送信" />
+ </p>
+</form>
+
+
+
+<h2>削除</h2>
+<form method="delete" action="/members">
+ <p>
+ 会員ID：<input type="text" name="member_id" /><br />
+ <input type="submit" value="送信" />
+ </p>
+</form>
+
+</body>
+</html>

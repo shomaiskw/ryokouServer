@@ -1,0 +1,10 @@
+{
+	"member_id": "1",
+	"member_nic": "Ishibasy",
+	"member_birthday": "1992/1/1 11:11:11",
+	"member_sex": "1",
+	"member_address": "a@a",
+	"job_id": "1",
+	"member_mail": "a@a",
+	"member_passwd": "123"
+}

@@ -1,0 +1,7 @@
+{
+	"post_member_id": "1",
+	"member_id": "1",
+	"plan_id": "1",
+	"review_star": 1,
+	"comment": "aaa"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>POST TEXT HTML</title>
+<script type="text/javascript"
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+ 
+		$("#pbutton").click( function(){
+ 			$("#post textarea").text("");
+			var url = $("#url").val();
+            var t = $("#jsons").val();
+			var jsondata =  JSON.parse(t);
+
+			alert(JSON.stringify(jsondata));
+ 
+ 
+			$.post(url,
+		        jsondata,
+		        function (result) {
+					$("#post textarea").text(''+JSON.stringify(result)+'');
+		        },
+		        "json"
+		    );
+ 
+		});
+			$("#gbutton").click( function(){
+ 			$("#post textarea").text("");
+ 
+			var url = $("#url").val();
+            var t = $("#jsons").val();
+			var jsondata =  JSON.parse(t);
+
+			alert(JSON.stringify(jsondata));
+ 
+ 
+			$.get(url,
+		        jsondata,
+		        function (result) {
+					$("#post textarea").text(''+JSON.stringify(result)+'');
+		        },
+		        "json"
+		    );
+ 
+		});
+ 
+	});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<h1>POST TEST</h1>
+	</div>
+	<div id="post">
+		<p><input type="text" id="url"></p>
+		<p><textarea id="jsons" cols=150 rows=8></textarea>
+		<button type="button" id="pbutton">POST</button></p>
+		<button type="button" id="gbutton">GET</button></p>
+		<p>response:</p> 
+		<textarea cols=150 rows=8 disabled ></textarea>
+	</div>
+ 
+</body>
+</html>
